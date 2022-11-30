@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Noto+Sans+JP:wght@700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    transition: all .5s ease-out;
+    cursor:default;
+}
+body{
+    transition: all .1s ease;
+    overflow: hidden;
+    background-image: var(--background);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.changeMode{
+    display: inline-flex;
+    position: absolute;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 7%;
+    height: 3.5vw;
+    border-radius: 1vw;
+    background-color:var(--maincolor);
+    top: 1vw;
+    left: 2vw;
+    transition: all .3s ease-in-out;
+}
+.modes{
+    display: inline-flex;
+    position: relative;
+    width: 38%;
+    height: 2.7vw;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    color:var(--btn-hover);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.modes i{cursor: pointer;}
+.day{background-color: rgb(196, 196, 196);}
+.modes:hover{
+    color: rgb(255, 255, 255);
+}
+/*primaryCont*/
+.TitleOS{
+    
+    display: inline-flex;
+    position: absolute;
+    width: 40%;
+    height: 12%;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    font-family: 'Noto Sans JP';
+    color:var(--maincolor);
+    border-radius: 3vh;
+    left: 30%;
+    top: -15%;
+    background-color: #ffffff86;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.primaryCont{
+    display: inline-flex;
+    position: absolute;
+    width: 60%;
+    height: 65%;
+    background-color:rgba(255, 255, 255, 0.521);
+    border-radius: 3vh;
+    left: 20%;
+    bottom: 10%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+}
+.primaryCont label{
+    display: inline-flex;
+    position: absolute;
+    width: 90%;
+    height: 20%;
+    background-color:var(--maincolor);
+    top: 10%;
+    left: -100%;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2vh;
+    transition: all .5s ease-out;
+    z-index: 2;
+}
+#Expectator{
+    display: inline-flex;
+    position:relative;
+    width: 60%;
+    height: 55%;
+    border-radius: 1vh;
+    border: none;
+    outline: none;
+    padding-left: 2vh;
+    font-size: 1.3rem;
+    cursor:text;
+}
+.SaveExp{
+    display: inline-flex;
+    position: relative;
+    width: 20%;
+    height: 55%;
+    border-radius: 1vh;
+    background-color:var(--btn-color);
+    color: rgb(255, 255, 255);
+    font-family: 'Concert One';
+    font-size: 1.8rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all .3s ease-out;
+
+    cursor: pointer;
+}
+.SaveExp:hover{box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;background-color: var(--btn-hover);}
+.SaveExp:active{
+    height: 45%;
+    background-color:var(--btn-active);
+    border-radius: 10vh;
+}
+.textPC{
+    display: inline-flex;
+    position: absolute;
+    background-color:var(--maincolor);
+    width: 55%;
+    height: 55%;
+    bottom: 8%;
+    left: -50%;
+    border-radius: 2vh;
+    font-size: 1.3rem;
+    font-family:'Concert One', cursive;
+    color: rgb(255, 255, 255);
+    padding: 2vh;
+    transition: all .5s ease-out;
+}
+
+.primaryCont i{
+    display: inline-flex;
+    position: absolute;
+    width: 20%;
+    height: 30%;
+    background-color:var(--maincolor);
+    right: -20%;
+    bottom: 18%;
+    border-radius: 2vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
+    font-size:9rem;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-out;
+    cursor: pointer;
+}
+
+.primaryCont i:hover{
+    box-shadow: rgba(0, 0, 0, 0.281) 0px 3px 8px;
+    background-color:rgb(255, 255, 255);
+    color:var(--maincolor);
+    width: 19%;height: 29%;bottom: 18%;
+    font-size: 8rem;
+}
+.primaryCont i:active{font-size: 9rem; background-color:var(--maincolor);}
+
+.primaryCont i span{
+    display: inline-flex;
+    position: absolute;
+    color:var(--maincolor);
+    font-size: 1.3rem;
+    transition: all .5s ease-out;
+    cursor: pointer;
+}
+.primaryCont i:hover span{color: white;}
+/*advice*/
+.preStart{
+    display: inline-flex;
+    position: absolute;
+    width: 60%;
+    height: 65%;
+    background-color:rgba(255, 255, 255, 0.521);
+    border-radius: 3vh;
+    left: -60%;
+    bottom: 10%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.preStart h2{
+    display: inline-flex;
+    position: relative;
+    width: 90%;
+    height: 12%;
+    border-radius: 1vw;
+    margin: 3vw;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--maincolor);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Concert One';
+}
+.startDis{
+    display: inline-flex;
+    position: relative;
+    width: 80%;
+    height: 50%;
+    background-color:var(--maincolor);
+    border-radius: 1vw;
+    text-align: center;
+    color: white;
+    font-family: 'Noto Sans JP';
+    font-size: .9rem;
+    padding: 2vw;
+    
+    
+}    
+.btnsS{
+    display: inline-flex;
+    position: relative;
+    width: 25%;
+    height: 10%;
+    background-color:var(--btn-color);
+    margin: 2vw 7vw;
+    border-radius: 1vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'Concert One';
+    color: white;
+    transition: all .2s ease-in-out;
+}
+.btnsS:hover{
+    margin: 1.5vw 7vw;
+    background-color:var(--btn-hover);
+}
+.btnsS:active{background-color: var(--btn-active);}
+/*alert*/
+.blur{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--alert);
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: contain;
+    opacity: 0;
+    z-index: 10;
+    transition: all .3s ease-in-out;
+}
+.Alert{
+    display: inline-flex;
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.233);
+    flex-wrap: wrap;
+    justify-content: center;
+    left: 100%;
+    bottom: 15%;
+    gap: 1vw;
+    border-radius: 1.5vw;
+    box-shadow: rgba(0, 0, 0, 0.267) 0px 3px 8px;
+    transition: all .7s ease-in-out;
+}
+.Areason{
+    display: inline-flex;
+    position: relative;
+    width: 80%;
+    height: 10%;
+    background-color:var(--maincolor);
+    top: 3vw;
+    border-radius: 1vw;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family:'Concert One', cursive; 
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.Amessage{
+    display: inline-flex;
+    position: relative;
+    width: 80%;
+    height: 30%;
+    background-color:var(--maincolor);
+    border-radius: 1vw;
+    font-family: 'Concert One', cursive;
+    font-size: 1.3rem;
+    color: white;
+    padding: 1vw;
+    text-align: center;
+}
+.IconPrimary{
+    display: inline-flex;
+    position: relative;
+    width: 45%;
+    height: 18vw;
+    background-color: rgba(0, 0, 0, 0.205);
+    font-size: 14vw;
+    color: white;
+    border-radius: 3.3vw;
+    justify-content: center;
+    align-items: center;
+}
+.IconClose{
+    display: inline-flex;
+    position: absolute;
+    width: 7vh;
+    height: 7%;
+    justify-content: center;
+    align-items: center;
+    border-radius: .8vw;
+    top: -9%;
+    transition: all .2s ease-in-out;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.267) 0px 3px 8px;
+    cursor: pointer;
+}
+.IconClose:hover{
+    top: -9.8%;
+    color: black;
+    background-color:rgb(255, 255, 255);
+}
+/*succes*/
+.succesCont{
+    display: inline-flex;
+    position: absolute;
+    width: 9%;
+    height: 9vw;
+    top: -20%;
+    right: 1%;
+    justify-content: center;
+    align-items: center;
+    border-radius: .7vw;
+    background-color:var(--maincolor);
+    color: white;
+    font-size: 7vw;
+    transition: all .7s ease-in-out;
+}
+/*mediaquerys*/
+@media screen and (max-width: 1300px) {
+    .primaryCont i{
+        font-size: 8rem;
+    }
+    .primaryCont i:hover{font-size: 7rem;}
+}
+@media screen and (max-width: 1150px) {
+    .primaryCont i{
+        font-size: 7rem;
+    }
+    .primaryCont i:hover{font-size: 6rem;}
+    .textPC{font-size: 1.4rem;}
+    .primaryCont{height: 64%;}
+    .TitleOS{font-size: 3rem;}
+    .SaveExp{font-size: 1.4rem;}
+    .SaveExp:active{border-radius: 2vh;}
+}
+@media screen and (max-width: 900px) {
+    .primaryCont i{
+        font-size: 6rem;
+    }
+    .primaryCont i:hover{font-size: 5rem;}
+    .primaryCont i{height: 25%;bottom: 18%;}
+    .textPC{font-size: 1.2rem;}
+    .TitleOS{font-size: 2.8rem;}
+    .SaveExp:active{border-radius: 2vh;}
+    .changeMode{width: 8%;height: 4.8vw;}
+}
+@media screen and (max-width: 800px) {
+    .primaryCont label{width: 90%;}
+    .primaryCont i{height: 10%; width: 40%;font-size: 2.5rem;justify-content:flex-start;padding-left: 3%;top: 33%;}
+    .primaryCont i:hover{font-size: 2rem;height: 9%;width: 39%;}
+    .primaryCont i span{right: 10%;color: rgb(255, 255, 255);}
+    .textPC{height: 45%;width: 90%; font-size: 1.4rem;}
+    .primaryCont{width: 60%;left: 20%;}
+    .Alert{width: 50%;}
+    .IconPrimary{width: 40%; height: 17vw;font-size: 13vw;}
+    .changeMode{width: 10%;height: 6vw;border-radius: 1.5vw;}
+    .modes{height: 4vw;}
+}
+@media screen and (max-width: 600px) {
+    .primaryCont i{width: 50%;}
+    .TitleOS{font-size: 2.3rem;}
+    .textPC{height: 50%;bottom:4% ; font-size: 1.3rem;}
+    .primaryCont{width: 70%;left: 15%;}
+    .primaryCont i:hover{height: 9%;width: 49%;}
+    .Alert{width: 60%;}
+    .IconPrimary{width: 45%; height: 27vw;font-size: 22vw;}
+    .changeMode{width: 12%;height: 7vw;border-radius: 2vw;}
+    .modes{width: 40%;height: 5vw;}
+}
+@media screen and (max-width: 450px){
+    .TitleOS{font-size: 1.8rem;}
+    .primaryCont i{width: 60%;}
+    .primaryCont{width: 90%;left: 5%;}
+    .primaryCont i:hover{height: 9%;width: 59%;}
+    .Alert{ width: 70%;}
+    .IconPrimary{width: 45%; height: 30vw;font-size: 25vw;}
+    .Alert{width: 70%;}
+    .IconPrimary{width: 45%; height: 25vw;font-size: 18vw;}
+}
+@media screen and (max-width: 350px){
+    .textPC{ font-size: 1rem;}
+    .primaryCont{height: 80%;bottom: 3%;}
+    .primaryCont i span{display: none;}
+    .primaryCont i{width: 20%;justify-content: center;align-items: center;padding-right: 2%;}
+    .primaryCont i:hover{height: 9%;width: 19%;}
+    .Alert{width: 80%;}
+    .IconPrimary{width: 45%; height: 25vw;font-size: 18vw;}
+    .TitleOS{
+        width: 60%;
+        height: 10%;
+        left: 20%;
+    }
+}
+@media screen and (max-width: 425px){
+    .TitleOS{
+        width: 60%;
+        left: 20%;
+    }
+    .primaryCont i{font-size: 2rem;}
+    .succesCont{font-size: 3.2rem;}
+}
+@media screen and (max-height: 530px){
+    .textPC{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 425px){
+    .primaryCont i{font-size: 2rem;}
+    .changeMode{
+        width: 17%;
+        height: 8%;
+        left: 1.5%;
+    }
+    .modes{
+        width: 45%;
+        height: 8vw;
+        font-size: 1rem;
+    }
+    .succesCont{
+        width: 15vw;
+        height: 15vw;
+        font-size: 2.2rem;
+    }
+    /*prestart*/
+    .preStart{
+        width: 90%;
+        left: -100%;
+    }
+    .startDis{
+        width: 90%;
+        height: 60%;
+    }
+}
+
+
+
+
